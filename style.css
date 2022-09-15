@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 1rem 0.5rem;
+  text-align: right;
+}
+
+button {
+  border: none;
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  background-color: #D8D9DB;
+}
+
+.operator {
+  background-color: #DF974C;
+  color: white;
+}
+
+.result {
+  grid-area: result;
+  color: white;
+  background-color: black;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.backspace {
+  grid-area: backspace;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.subtract {
+  grid-area: subtract;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.add {
+  grid-area: add;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.equals {
+  grid-area: equals;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: 85px 85px 85px 85px;
+  grid-template-areas:
+  "result result result result"
+  "clear clear backspace divide"
+  "seven eight nine multiply"
+  "four five six subtract"
+  "one two three add"
+  "zero zero zero equals";
+  grid-gap: 0.15rem;
+  width: calc(85px*4 + 0.15rem*3);
+  margin: 0 auto;
+  background-color: black;
+}

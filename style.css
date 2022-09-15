@@ -3,7 +3,8 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: "Atkinson Hyperlegible", monospace, sans-serif;
+  background-color: 3faf9f7;
 }
 
 h1 {
@@ -22,30 +23,47 @@ button {
   font-size: 2rem;
   padding: 1.5rem 1rem;
   width: 100%;
-  background-color: #D8D9DB;
+  background-color: #e5effb;
+  font-family: "Atkinson Hyperlegible", monospace, sans-serif;
 }
 
 .operator {
-  background-color: #DF974C;
-  color: white;
+  background-color: #e6f2df;
+  /* color: ; */
 }
 
 .result {
   grid-area: result;
   color: white;
   background-color: black;
+  /* grid-column: 1 / span 3;
+  grid-row: row1-start; */
 }
 
 .clear {
   grid-area: clear;
+  /* grid-column: 1 / span 1;
+  grid-row: row2-start; */
+}
+
+.clear button {
+  background-color: #feebdd;
 }
 
 .backspace {
   grid-area: backspace;
+  /* grid-column: 3;
+  grid-row: row2-start; */
+}
+
+.backspace button {
+  background-color: #f3ebff;
 }
 
 .divide {
   grid-area: divide;
+  /* grid-column: 4;
+  grid-row: row2-start; */
 }
 
 .seven {
@@ -115,7 +133,10 @@ button {
   "one two three add"
   "zero zero zero equals";
   grid-gap: 0.15rem;
-  width: calc(85px*4 + 0.15rem*3);
+  width: calc(85px*4 + 0.15rem*3 + 2px*2);
   margin: 0 auto;
   background-color: black;
+  border: 2px solid black;
+  border-radius: 2rem;
+  overflow: hidden;
 }

@@ -4,7 +4,7 @@
 
 body {
   font-family: "Atkinson Hyperlegible", monospace, sans-serif;
-  background-color: 3faf9f7;
+  background-color: #faf9f7;
 }
 
 h1 {
@@ -23,13 +23,37 @@ button {
   font-size: 2rem;
   padding: 1.5rem 1rem;
   width: 100%;
-  background-color: #e5effb;
   font-family: "Atkinson Hyperlegible", monospace, sans-serif;
 }
 
-.operator {
+button:hover, button:focus {
+  background: linear-gradient(rgba(250, 249, 247, 0.7), rgba(250, 249, 247, 0.7));
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 3px #157eff inset;
+}
+
+button:active {
+  opacity: 0.9;
+}
+
+.operator button {
   background-color: #e6f2df;
-  /* color: ; */
+}
+
+.operator button:hover, .operator button:focus {
+  box-shadow: 0px 0px 0px 3px #57b223 inset;
+}
+
+.number button {
+  background-color: #e5effb;
+}
+
+.clear button:hover, .clear button:focus {
+  box-shadow: 0px 0px 0px 3px #d1671b inset;
+}
+
+.backspace button:hover, .backspace button:focus {
+  box-shadow: 0px 0px 0px 3px #8342e4 inset;
 }
 
 .result {

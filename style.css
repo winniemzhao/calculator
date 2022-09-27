@@ -64,6 +64,10 @@ button:active {
   grid-row: row1-start; */
 }
 
+.screen h2 {
+  overflow: auto;
+}
+
 .clear {
   grid-area: clear;
   /* grid-column: 1 / span 1;

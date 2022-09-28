@@ -29,7 +29,7 @@ button {
 button:hover, button:focus {
   background: linear-gradient(rgba(250, 249, 247, 0.7), rgba(250, 249, 247, 0.7));
   cursor: pointer;
-  box-shadow: 0px 0px 0px 3px #157eff inset;
+  box-shadow: 0px 0px 0px 3px #157eff inset !important;
 }
 
 button:active {
@@ -41,7 +41,7 @@ button:active {
 }
 
 .operator button:hover, .operator button:focus {
-  box-shadow: 0px 0px 0px 3px #57b223 inset;
+  box-shadow: 0px 0px 0px 3px #57b223 inset !important;
 }
 
 .digit button {
@@ -49,11 +49,11 @@ button:active {
 }
 
 .clear button:hover, .clear button:focus {
-  box-shadow: 0px 0px 0px 3px #d1671b inset;
+  box-shadow: 0px 0px 0px 3px #d1671b inset !important;
 }
 
 .backspace button:hover, .backspace button:focus {
-  box-shadow: 0px 0px 0px 3px #8342e4 inset;
+  box-shadow: 0px 0px 0px 3px #8342e4 inset !important;
 }
 
 .screen {
